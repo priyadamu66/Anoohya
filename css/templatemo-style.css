@@ -1076,6 +1076,35 @@ https://templatemo.com/tm-516-known
   font-size: 1.2em;
 }
 
+@media (max-width: 768px) {
+  .para-container {
+    flex-direction: column; /* Stack image and text */
+    text-align: center; /* Center align for readability */
+  }
+
+  .para-text {
+    padding: 10px;
+    text-align: left; /* Keep text aligned left */
+  }
+
+  .para-image {
+    order: -1; /* Moves image above text */
+  }
+
+  .about-container {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .about-text {
+    text-align: left; /* Ensure text is readable */
+  }
+
+  .para-image img {
+    max-width: 80%; /* Reduce image width for better fit */
+  }
+}
+
 /*intro para 2*/
 #intro-para2 {
   display: flex;
