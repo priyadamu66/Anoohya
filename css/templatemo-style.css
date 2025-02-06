@@ -1058,12 +1058,17 @@ https://templatemo.com/tm-516-known
   justify-content: center;
   align-items: center;
   padding: 40px;
+  gap: 20px; /* Added space between text and image */
 }
+
 .about-container {
   max-width: 900px;
   width: 100%;
   padding: 20px;
   border-radius: 10px;
+  display: flex; /* To align text and image side by side */
+  align-items: center;
+  gap: 20px; /* Space between text and image */
 }
 
 .about-text {
@@ -1071,31 +1076,48 @@ https://templatemo.com/tm-516-known
   font-family: Arial, sans-serif;
   color: #333;
   line-height: 1.6;
+  flex: 1; /* Text takes available space */
 }
+
 .about-text b {
   font-size: 1.2em;
 }
 
+.about-image {
+  max-width: 300px; /* Controls image size */
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
 @media (max-width: 768px) {
   #about-me {
-    flex-direction: column; /* Stacks the content vertically */
-    padding: 20px; /* Reduced padding for mobile */
+    flex-direction: column; /* Stack content vertically */
+    padding: 20px;
   }
 
   .about-container {
-    width: 95%; /* Increased width for better content fit */
-    padding: 15px; /* Reduced padding */
-    border-radius: 8px; /* Slightly reduced border-radius */
+    width: 95%;
+    padding: 15px;
+    border-radius: 8px;
+    flex-direction: column; /* Stack text above image */
+    align-items: center; /* Center items for mobile */
   }
 
   .about-text {
-    text-align: center; /* Centers text for better readability */
+    text-align: center;
   }
 
   .about-text b {
-    font-size: 1.1em; /* Slightly smaller bold text */
+    font-size: 1.1em;
+  }
+
+  .about-image {
+    max-width: 100%; /* Image fits full width on mobile */
+    margin-top: 15px; /* Space between text and image */
   }
 }
+
 
 @media (max-width: 768px) {
   .para-container {
