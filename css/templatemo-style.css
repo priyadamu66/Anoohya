@@ -56,21 +56,7 @@ https://templatemo.com/tm-516-known
     line-height: 24px;
     text-align: justify;
   }
-  @media (max-width: 768px) {
-    p {
-      width: 200px;
-      font-size: 14px; /* Slightly smaller font for better readability */
-      line-height: 22px; /* Adjusted line height */
-      padding: 0 10px; /* Adds spacing from edges */
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 5px; /* Slightly reducing border-radius for smaller screens */
-    }
-   
-  }
- 
+  
 
   /*---------------------------------------
      GENERAL               
@@ -1222,6 +1208,22 @@ https://templatemo.com/tm-516-known
   padding: 20px;
   border-radius: 8px;
 }
+
+/* Mobile view adjustments */
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .act-text {
+    font-size: 14px; /* Slightly smaller font for better readability */
+    line-height: 22px; /* Adjusted line height for mobile screens */
+    padding: 15px; /* Reduced padding to save space */
+    border-radius: 5px; /* Slightly reduced border radius */
+    width: 150%; /* Increased width for better content fit */
+    margin-left: -25%; /* Moves the paragraph towards the left */
+  }
+}
+
+
+
 /*packages para*/
 /* Styling the package section */
 #package {
