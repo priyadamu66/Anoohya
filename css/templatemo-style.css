@@ -1197,11 +1197,10 @@ https://templatemo.com/tm-516-known
   display: flex;
   align-items: center;
 }
-
 .intro-program ul li::before {
-  content: "✔️"; /* Add checkmark */
+  content: "\2714"; /* Unicode for checkmark */
   margin-right: 10px;
-  color: green;
+  color: red; /* This will apply the red color */
 }
 
 
