@@ -1065,6 +1065,7 @@ https://templatemo.com/tm-516-known
   padding: 20px;
   border-radius: 10px;
 }
+
 .about-text {
   text-align: left;
   font-family: Arial, sans-serif;
@@ -1073,6 +1074,27 @@ https://templatemo.com/tm-516-known
 }
 .about-text b {
   font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+  #about-me {
+    flex-direction: column; /* Stacks the content vertically */
+    padding: 20px; /* Reduced padding for mobile */
+  }
+
+  .about-container {
+    width: 95%; /* Increased width for better content fit */
+    padding: 15px; /* Reduced padding */
+    border-radius: 8px; /* Slightly reduced border-radius */
+  }
+
+  .about-text {
+    text-align: center; /* Centers text for better readability */
+  }
+
+  .about-text b {
+    font-size: 1.1em; /* Slightly smaller bold text */
+  }
 }
 
 @media (max-width: 768px) {
@@ -1088,11 +1110,6 @@ https://templatemo.com/tm-516-known
 
   .para-image {
     order: -1; /* Moves image above text */
-  }
-
-  .about-container {
-    text-align: center;
-    padding: 20px;
   }
 
   .about-text {
@@ -1119,7 +1136,13 @@ https://templatemo.com/tm-516-known
   width: 100%;
   flex-direction: row-reverse; /* This moves the image to the left and text to the right */
 }
-
+@media (max-width: 768px) {
+  .intro-2 {
+    flex-direction: column; /* Stacks content vertically for mobile */
+    text-align: center; /* Centers text */
+    padding: 10px; /* Adds some padding for better spacing */
+  }
+}
 .intro-2-text {
   flex: 1;
   padding: 20px;
