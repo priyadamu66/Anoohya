@@ -1451,3 +1451,21 @@ https://templatemo.com/tm-516-known
     margin: 0 auto; /* Ensures it stays centered */
   }
 }
+
+.quotes{
+  margin-left: -80%;
+  color: #D84040;
+}
+.two-img{
+  float: left;
+
+}
+.free{
+  margin-left: 30%;
+}
+.intro-2-image{
+  border-radius: 0%;
+}
+.bg-img{
+  background-image: url(/images/bg4.png);
+}
